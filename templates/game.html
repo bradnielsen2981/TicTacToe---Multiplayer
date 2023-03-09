@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+<h1>TicTacToe</h1>
+    <p id="state" class="blink"></p>
+
+    <canvas id="board" width="600" height="600"></canvas>
+    <div width="100%">
+    <button id="endgame">End Game</button>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="static/js/new_ajax_helper.js"></script>
+<script src="static/js/tictactoe.js"></script>
+{% endblock %}

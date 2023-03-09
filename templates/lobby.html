@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <h1>Lobby</h1>
+    <h3>Create Game</h3>
+    <form action="/lobby" method="POST">
+        <input type="hidden" name="command" value="creategame">
+        <!-- on change of input -- filter the results below in the open game list -->
+        <input type="text" name="gametype" placeholder="Enter Game Type" oninput="" autofocus required />
+        <button type="submit">Create Game</button>
+    </form>
+    <br/>
+    <div id="gamelist">
+        <h3>Join Game</h3>
+        <form action="/lobby" method="POST">
+        <input type="hidden" name="command" value="joingame">
+        {% if opengamelist %}
+            <select name="opengame" id="opengames" size=10>
+                {% for opengame in opengamelist %}
+                    <option value="{{opengame['gameid']}}">{{opengame}}</option>
+                {% endfor %}
+            </select>
+        {% endif %}
+        <br/>
+        <button type="submit">Join Game</button>
+        </form>
+    </div>
+
+</div>
+{% endblock %}
+{% block scripts %}
+{% endblock %}

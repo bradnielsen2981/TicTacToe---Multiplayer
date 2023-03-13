@@ -1,23 +1,23 @@
-//GLOBAL VARIABLES AND CONFIG
-alert("Loading TicTacToe");
-canvas = document.getElementById('board');
+//----------------INITIALISING THE GAME-----------------------------------------
+alert("Loading Game");
+canvas = document.getElementById('board'); //where drawing occurs
 context = canvas.getContext('2d');
-context.lineWidth = 5;
-board = [];
-stateelement = document.getElementById("state"); //tracks whose turn
-turn = false;
-player = 0;
+context.lineWidth = 5; //sets drawing to use a common linewidth
+//img = new Image(); img.src = 'path/to/your/image.jpg'; //This code can be used to load an image to draw on a canvas
+board = [[0,0,0],
+         [0,0,0],
+         [0,0,0]];//this will be the game data
+scores = [0,0]; //scores of player 1 and player 2
+stateelement = document.getElementById("state"); //used to write on screen whose turn it is
+turn = false; //turn will be set to true if its the players turn
+player = 0; //player will be set to an id of 1 or 2 after game state is checked
+reset_board(); //reset the game board
+intervalId = 0; //A handle for repeatedly pinging the server for the state of the game.
+listenForGameState(); //Listen for game state every 5 seconds....this will tell the player if its their turn
 
-//START LOOKING FOR THE CURRENT GAME STATE every 5 seconds....
-new_ajax_helper('/getstate',statehandler);
-intervalId = setInterval(function () { new_ajax_helper('/getstate',statehandler) } ,5000); /* When page loads ping server to get whose turn it is (1 second interval) */
+//------------------------------------------------------------------------------
 
-//Reset the game board
-reset_board();
-
-endgame.onclick = function(event) {
-    new_ajax_helper('/endgame');
-};
+//---------------DRAWING FUNCTIONS FOR THE GAME --------------------------------
 
 //reset the board
 function reset_board()
@@ -68,6 +68,13 @@ function draw_cross(x,y)
     context.stroke();
 }
 
+//draw an image on a canvas (Code was got from Chat GPT) - not being used
+function draw_image(x,y)
+{
+    // Draw the image on the canvas at position (0, 0). img is a global variable see the initialisation
+    context.drawImage(img, x, y);
+}
+
 //draw the board
 function draw_board()
 {
@@ -89,44 +96,7 @@ function draw_board()
     }
 }
 
-// Add a click event listener to the canvas
-canvas.onclick = function(event)
-{
-    if (turn == false)
-    {
-        return //dont allow clicks until its your turn
-    }
-    // Get the mouse position relative to the canvas
-    rect = canvas.getBoundingClientRect();
-    mouseX = event.clientX - rect.left;
-    mouseY = event.clientY - rect.top;
-
-    x = Math.trunc(mouseX / 200); //make x = 0,1,2
-    y = Math.trunc(mouseY / 200); //make y = 0,1,2
-
-    if (player == 1) //player 1
-    {
-        draw_circle(x,y);
-        board[y][x] = 1;
-    } else if (player == 2) //player 2
-    {
-        draw_cross(x,y);
-        board[y][x] = 2;
-    }
-    turn = false;
-
-    //checks for victory
-    checkforvictory();
-
-    //Send new state of board to server using JSON and AJAX
-    formobject = new FormData(); //create a form object
-    formobject.append("gamedata", JSON.stringify(board)); //email is a textinput tag value
-    new_ajax_helper('/maketurn',defaulthandler,formobject);
-    stateelement.innerHTML = "Waiting for other player to have their turn."
-    
-    //Start checking game state for your turn again
-    intervalId = setInterval(function () { new_ajax_helper('/getstate',statehandler) } ,5000);
-}
+//----------------GAME LOGIC FUNCTIONS----------------------------------------------
 
 //Determines who won
 function victory()
@@ -163,7 +133,7 @@ function victory()
         }
         else if (columnsum[i] == 8)
         {
-            return 1;
+            return 2;
         }
     }
 
@@ -186,37 +156,55 @@ function victory()
 }
 
 //check to see who won
-function checkforvictory()
+function checkForVictory()
 {
-    //Check for victory - ideally this should be done on the web server
+    //Check for victory - ideally this should be done on the web server but easier for students if not
     v = victory();
     if (v == 0)
     {
         //do nothing
     } else { //victory or draw has occurred
+        
         if (v == 1)
         {
-            alert("Player 1 wins!");
-        } else if (v == 2)
-        {
-            alert("Player 2 wins!");
+            if (player == 1) {
+                alert("You win!");
+                scores[0] = scores[0] + 1;
+            } else { 
+                alert("You lose!"); 
+            }
+        } else if (v == 2) {
+            if (player == 2) 
+            {
+                alert("You win!");
+                scores[1] = scores[1] + 1;
+            } else { 
+                alert("You lose!"); 
+            }
         } else if (v == 3)
         {
             alert("Draw!")
         }
+        saveScoreData();
         reset_board();
     }
 }
 
-//receive the state of the game from the server
+//------------SEND AND RECEIVES DATA FROM SERVER--------------------------------------
+//Listen for game state every 5 seconds....this will tell the player if its their turn, and get the state of the game
+function listenForGameState()
+{
+    intervalId = setInterval(function () { new_ajax_helper('/getstate',statehandler) } ,5000);
+}
+
+//receive the state of the game from the server - try not to change this function
 function statehandler(result)
 {
     console.log(result);
-
     //Get state of the game
     if (result.state == "waiting")
     {
-        stateelement.innerHTML = "Waiting for player to join!";
+        stateelement.innerHTML = "Waiting for your turn..";
     } 
     else if (result.state == "ended")
     {
@@ -225,23 +213,93 @@ function statehandler(result)
     } 
     else if (result.state == "yourturn")
     {
-        checkforvictory();
-        player = result.player; //kind of unnecessary
-        turn = true;
-        clearInterval(intervalId); //stop checking game state
         stateelement.innerHTML = "It's your turn";
+        clearInterval(intervalId); //stop checking game state
+        checkForVictory(); //player might have already lost
+        player = result.player; //always getting the player id is kind of unnecessary but saves a lot of code
+        turn = true;
         if (result.gamedata != null) //if not a new game
             board = JSON.parse(result.gamedata); //update the board
         draw_board();
     } 
-    else if (result.state == "returntologin")
-    {
-        window.location = "/login";
-    } 
-    else if (result.state == "returntolobby")
-    {
-        window.location = "/lobby";
-    }
     return
 }
 
+//gets game data to the server to be stored as a JSON string
+function sendGameData()
+{
+    //Send new state of board to server using JSON and AJAX
+    formobject = new FormData(); //create a form object
+    formobject.append("gamedata", JSON.stringify(board)); //email is a textinput tag value
+    new_ajax_helper('/maketurn',defaulthandler,formobject); //defaulthandler will console.log any return data
+}
+
+//end the game on the server, and tells the other player game has ended
+function endGame()
+{
+    new_ajax_helper('/endgame');
+}
+
+//save both players scores onto the server
+function saveScoreData()
+{
+    //Send new state of board to server using JSON and AJAX
+    formobject = new FormData(); //create a form object
+    formobject.append("scoredata", JSON.stringify(scores)); //email is a textinput tag value
+    new_ajax_helper('/savescoredata',defaulthandler,formobject);
+}
+
+//gets both players score data
+function getScoreData()
+{
+    new_ajax_helper('/getscoredata',scoreDataHandler);
+}
+
+//handlers the school data
+function scoreDataHandler(result)
+{
+    scores = JSON.parse(result.scoredata); 
+}
+
+//-------EVENT LISTENERS ON PAGE--------------------------------------------
+//Event listens listen for events and then call functions of code in response....
+// Add a click event listener to the canvas
+canvas.onclick = function(event)
+{
+    if (turn == false)
+    {
+        return //dont allow clicks until its your turn
+    }
+    // Get the mouse position relative to the canvas
+    rect = canvas.getBoundingClientRect();
+    mouseX = event.clientX - rect.left;
+    mouseY = event.clientY - rect.top;
+
+    x = Math.trunc(mouseX / 200); //make x = 0,1,2
+    y = Math.trunc(mouseY / 200); //make y = 0,1,2
+
+    if (player == 1) //player 1
+    {
+        draw_circle(x,y);
+        board[y][x] = 1;
+    } else if (player == 2) //player 2
+    {
+        draw_cross(x,y);
+        board[y][x] = 2;
+    }
+    turn = false;
+    checkForVictory(); //checks for victory
+    sendGameData(); // send the game data to the server...
+    stateelement.innerHTML = "Waiting for other player to have their turn.";
+    listenForGameState(); //now that turn is finished listen for the game state, and your next turn
+}
+
+endgame.onclick = function(event) {
+    clearInterval(intervalId); //stop checking game state
+    endGame();  
+};
+
+//stupid function should be part of javascript standard library
+function sleep(time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+  }

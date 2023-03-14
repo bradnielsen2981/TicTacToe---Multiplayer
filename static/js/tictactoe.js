@@ -8,17 +8,16 @@ board = [[0,0,0],
          [0,0,0],
          [0,0,0]];//this will be the game data
 scores = [0,0]; //scores of player 1 and player 2
+
 stateelement = document.getElementById("state"); //used to write on screen whose turn it is
 turn = false; //turn will be set to true if its the players turn
 player = 0; //player will be set to an id of 1 or 2 after game state is checked
-reset_board(); //reset the game board
+draw_board();
 intervalId = 0; //A handle for repeatedly pinging the server for the state of the game.
 listenForGameState(); //Listen for game state every 5 seconds....this will tell the player if its their turn
-
 //------------------------------------------------------------------------------
 
 //---------------DRAWING FUNCTIONS FOR THE GAME --------------------------------
-
 //reset the board
 function reset_board()
 {
@@ -209,7 +208,7 @@ function statehandler(result)
     else if (result.state == "ended")
     {
         alert("Other player has left the game!");
-        window.location = "lobby.html";
+        window.location = "/lobby";
     } 
     else if (result.state == "yourturn")
     {
@@ -237,7 +236,13 @@ function sendGameData()
 //end the game on the server, and tells the other player game has ended
 function endGame()
 {
-    new_ajax_helper('/endgame');
+    formobject = new FormData(); 
+    new_ajax_helper('/endgame',endhandler,formobject);
+}
+
+function endhandler(result)
+{
+    window.location = "/lobby";
 }
 
 //save both players scores onto the server
@@ -296,7 +301,7 @@ canvas.onclick = function(event)
 
 endgame.onclick = function(event) {
     clearInterval(intervalId); //stop checking game state
-    endGame();  
+    endGame();
 };
 
 //stupid function should be part of javascript standard library

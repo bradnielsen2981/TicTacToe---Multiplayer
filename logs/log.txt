@@ -1,0 +1,399 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.160.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:22] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:23] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:27] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:27] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:34] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:35] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:35] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:35] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:50] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:51] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:51] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:51] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:54] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:55] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:08:55] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:22] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:23] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:23] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:28] "[32mPOST /lobby HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:29] "GET /game HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:29] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:29] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:29] "GET /static/js/tictactoe.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:36] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:38] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:39] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:39] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:41] "[32mPOST /lobby HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:41] "GET /game HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:41] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:42] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:42] "GET /static/js/tictactoe.js HTTP/1.1" 200 -
+INFO:app:Player 1 turn - (USERID: 1
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:42] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:48] "POST /maketurn HTTP/1.1" 200 -
+INFO:app:Player 2 turn - (USERID: 2
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:48] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:51] "POST /maketurn HTTP/1.1" 200 -
+INFO:app:Player 1 turn - (USERID: 1
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:53] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:55] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:55] "[32mPOST /endgame HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:09:56] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:10:01] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:10:03] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /getstate [POST]
+Traceback (most recent call last):
+  File "C:\Users\BNielsen\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+KeyError: 'gameid'
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:10:27] "[35m[1mPOST /getstate HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 10:10:27] "[33mGET /lobby.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.160.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:22:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:22:41] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:22:41] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:22:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:22:47] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:22:48] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:22:48] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:22:48] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:06] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:06] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:19] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:19] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:19] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:19] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:26] "[32mPOST /lobby HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:26] "GET /game HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:26] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:26] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:26] "GET /static/js/tictactoe.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:33] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:33] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:33] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:33] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:36] "[32mPOST /lobby HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:36] "GET /game HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:36] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:37] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:37] "GET /static/js/tictactoe.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:38] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:43] "POST /getstate HTTP/1.1" 200 -
+INFO:app:Player 2 turn - (USERID: 2
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:43] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:45] "POST /maketurn HTTP/1.1" 200 -
+INFO:app:Player 1 turn - (USERID: 1
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:48] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:49] "POST /maketurn HTTP/1.1" 200 -
+INFO:app:Player 2 turn - (USERID: 2
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:50] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:53] "[32mPOST /endgame HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:53] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:54] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:23:58] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.160.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:32:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:32:06] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:32:06] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:32:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:33:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:33:39] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:33:39] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:33:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:00] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:00] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:00] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:00] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:10] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:11] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:11] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:11] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:31] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:31] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:31] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:34] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:34] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:34] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:44] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:45] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:45] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:48] "[32mPOST /lobby HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:48] "GET /game HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:48] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:49] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:49] "[36mGET /static/js/tictactoe.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:53] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:54] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:54] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:56] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:58] "[32mPOST /lobby HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:59] "GET /game HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:59] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:59] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:34:59] "[36mGET /static/js/tictactoe.js HTTP/1.1[0m" 304 -
+INFO:app:Player 1 turn - (USERID: 1
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:35:02] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:35:06] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:35:11] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:35:14] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:35:16] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:35:16] "[32mPOST /endgame HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:35:16] "GET /lobby HTTP/1.1" 200 -
+ERROR:app:Exception on /endgame [POST]
+Traceback (most recent call last):
+  File "C:\Users\BNielsen\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+KeyError: 'gameid'
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:35:25] "[35m[1mPOST /endgame HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:38:07] "[32mPOST /endgame HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:38:07] "GET /lobby HTTP/1.1" 200 -
+ERROR:app:Exception on /endgame [POST]
+Traceback (most recent call last):
+  File "C:\Users\BNielsen\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+KeyError: 'gameid'
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:38:10] "[35m[1mPOST /endgame HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:39:44] "[32mGET /logoff HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:39:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:39:44] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:39:45] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:39:47] "[32mGET /logoff HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:39:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:39:48] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:39:48] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.160.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:42:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:42:47] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:42:47] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:42:51] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:42:52] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:42:52] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:42:52] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:42:59] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:42:59] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:42:59] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:42:59] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:04] "[32mPOST /lobby HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:05] "GET /game HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:05] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:05] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:05] "GET /static/js/tictactoe.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:12] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:12] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:13] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:13] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:15] "[32mPOST /lobby HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:15] "GET /game HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:16] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:16] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:16] "GET /static/js/tictactoe.js HTTP/1.1" 200 -
+INFO:app:Player 1 turn - (USERID: 2
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:18] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:21] "POST /maketurn HTTP/1.1" 200 -
+INFO:app:Player 2 turn - (USERID: 1
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:22] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:25] "[32mPOST /endgame HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:25] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:27] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:56] "[32mGET /logoff HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:57] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:43:57] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.160.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:25] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:26] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:26] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:26] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:30] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:30] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:35] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:35] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:35] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:35] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:42] "[32mPOST /lobby HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:42] "GET /game HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:42] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:42] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:42] "[36mGET /static/js/tictactoe.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:45] "[32mGET /logoff HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:45] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:46] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:50] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:50] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:51] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:44:51] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:05] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:05] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:05] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:08] "[32mPOST /lobby HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:08] "GET /game HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:08] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:08] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:08] "[36mGET /static/js/tictactoe.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:15] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:15] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:15] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:app:Player 2 turn - (USERID: 1
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:15] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:21] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:22] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:22] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:33] "[32mGET /logoff HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:33] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:33] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:37] "[32mGET /logoff HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:37] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:37] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:43] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:44] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:44] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:44] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:52] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:52] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:52] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:52] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:57] "[32mPOST /lobby HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:58] "GET /game HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:58] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:58] "[36mGET /static/js/tictactoe.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:45:58] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:02] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:03] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:03] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:04] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:05] "[32mPOST /lobby HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:06] "GET /game HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:06] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:06] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:06] "[36mGET /static/js/tictactoe.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:10] "POST /getstate HTTP/1.1" 200 -
+INFO:app:Player 2 turn - (USERID: 1
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:13] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:14] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:15] "POST /maketurn HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:19] "POST /getstate HTTP/1.1" 200 -
+INFO:app:Player 1 turn - (USERID: 2
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:20] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:20] "POST /maketurn HTTP/1.1" 200 -
+INFO:app:Player 2 turn - (USERID: 1
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:25] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:26] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:28] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:30] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:31] "GET /game HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:31] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:31] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:31] "GET /static/js/tictactoe.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:36] "POST /getstate HTTP/1.1" 200 -
+INFO:app:Player 2 turn - (USERID: 1
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:38] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:40] "POST /getstate HTTP/1.1" 200 -
+ERROR:app:Exception on /endgame [POST]
+Traceback (most recent call last):
+  File "C:\Users\BNielsen\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+TypeError: The view function for 'endgame' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:43] "[35m[1mPOST /endgame HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:46:46] "POST /getstate HTTP/1.1" 200 -
+ERROR:app:Exception on /getstate [POST]
+Traceback (most recent call last):
+  File "C:\Users\BNielsen\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+TypeError: The view function for 'getstate' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:47:08] "[35m[1mPOST /getstate HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:47:08] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:47:09] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:47:09] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:47:22] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:48:00] "[32mGET /logoff HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:48:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:48:00] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:48:01] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.160.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:50:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:50:38] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:50:38] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:50:48] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:50:49] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:50:49] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:50:49] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:50:59] "[32mPOST /lobby HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:50:59] "GET /game HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:50:59] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:00] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:00] "GET /static/js/tictactoe.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:04] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:04] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:06] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:11] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:16] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:16] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:16] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:17] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:17] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:19] "[32mPOST /lobby HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:19] "GET /game HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:19] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:19] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:19] "GET /static/js/tictactoe.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:22] "POST /getstate HTTP/1.1" 200 -
+INFO:app:Player 2 turn - (USERID: 2
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:26] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:26] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:29] "POST /maketurn HTTP/1.1" 200 -
+INFO:app:Player 1 turn - (USERID: 1
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:31] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:34] "POST /getstate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:36] "POST /endgame HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:37] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:37] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:37] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:39] "POST /getstate HTTP/1.1" 200 -
+ERROR:app:Exception on /getstate [POST]
+Traceback (most recent call last):
+  File "C:\Users\BNielsen\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+TypeError: The view function for 'getstate' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:49] "[35m[1mPOST /getstate HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:49] "GET /lobby HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:50] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Mar/2023 11:51:50] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -

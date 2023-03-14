@@ -33,6 +33,8 @@ def check_game_permission():
         return redirect('./lobby')
     return
 
+
+
 #-------------------------------------------------------------------------------------------
 # BACKDOOR
 @app.route('/backdoor', methods=['GET','POST'])
@@ -169,7 +171,10 @@ def game():
 # CHECK FOR TURN
 @app.route('/getstate', methods=['GET','POST'])
 def getstate():
-    check_game_permission()
+    if 'userid' not in session:
+        return 
+    if 'gameid' not in session:
+        return 
     data = { "state":"waiting" }
     games = DATABASE.ViewQuery("SELECT * FROM games WHERE gameid = ?", (session['gameid'],)); game = games[0]; 
     #TO DO : Update last access time of game - can be used to end or delete games after a long period of inactivity
@@ -195,7 +200,10 @@ def getstate():
 # MAKE TURN - saves game data
 @app.route('/maketurn', methods=['GET','POST'])
 def maketurn():
-    check_game_permission()
+    if 'userid' not in session:
+        return 
+    if 'gameid' not in session:
+        return 
     data = { "state":"waiting" }
 
     if request.method=="POST": #get current game
@@ -211,7 +219,10 @@ def maketurn():
 #--Saves Scores as a JSON String inside the Database----------------------------------
 @app.route('/getscoredata', methods=['GET','POST'])
 def getscoredata():
-    check_game_permission()
+    if 'userid' not in session:
+        return 
+    if 'gameid' not in session:
+        return 
     data = None
     if request.method=="POST":
         scoredata = DATABASE.ViewQuery("SELECT scoredata FROM games WHERE gameid = ?", (session['gameid'],)); scoredata = scoredata[0]
@@ -220,7 +231,10 @@ def getscoredata():
 #--Get scores as a JSON String inside the Database------------------------------------
 @app.route('/savescoredata', methods=['GET','POST'])
 def savescoredata():
-    check_game_permission()
+    if 'userid' not in session:
+        return 
+    if 'gameid' not in session:
+        return 
     data = None
     scoredata = request.form.get('scoredata')
     DATABASE.ModifyQuery("UPDATE games SET scoredata = ? WHERE gameid = ?",(scoredata, session['gameid']))
@@ -230,10 +244,14 @@ def savescoredata():
 #---Ends the game, and clears the session data, tells the other player to do the same by setting game to ended
 @app.route('/endgame', methods=['GET','POST'])
 def endgame():
-    check_game_permission()
+    data = None
+    if 'userid' not in session:
+        return 
+    if 'gameid' not in session:
+        return 
     DATABASE.ModifyQuery("UPDATE games SET ended = 1 WHERE gameid = ?",(session['gameid'],))
     del session['gameid']
-    return redirect('/lobby')
+    return jsonify(data) 
 
 
 #--------------------------------------------------------------------------------------
